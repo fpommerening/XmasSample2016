@@ -44,7 +44,7 @@ namespace FP.XmasSample2016.Edimax
             return SendMessage(request);
         }
 
-        public async Task<decimal> NowPowerVolt()
+        public async Task<decimal> NowPowerWatt()
         {
             var request = CreateRequest("get", new XElement("NOW_POWER"));
             var result = await SendMessage(request);
